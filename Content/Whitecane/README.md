@@ -2,7 +2,8 @@
 
 ## Descrição
 
- Um sistema no qual o personagem usa uma simulação de uma bengala para identificar a posição dos objetos, podendo ser utilizados sons e vibração para identificação do espaço em que o jogador está se locomovendo, permitindo uma percepção espacial precisa o suficiente para navegar em ambientes tridimensionais.
+Um sistema no qual o personagem usa uma simulação de uma bengala para identificar a posição dos objetos, podendo ser utilizados sons e vibração para identificação do espaço em que o jogador está se locomovendo, permitindo uma percepção espacial precisa o suficiente para navegar em ambientes tridimensionais.
+
 Para solucionar esse problema são propostas duas soluções: Raycast e detecção de colisões. As funções de Raycast retornam os objetos colididos por uma reta dada uma origem, direção e distância [1] [2] . Na Unity, o script [8] tem como parâmetros a distância máxima para a emissão de raios, o ângulo de varredura em graus, o número de raios a serem lançados e o número de ações por segundo. Já na Unreal 4, ele ganha o nome de LineTrace [6], e tem como parâmetros a posição inicial, posição final, os canais, opções para traçar a linha quando é uma versão de debug, e opções para ignorar o emissor.
 Já a detecção de colisão é gerada de acordo com a sobreposição de dois objetos que podem colidir [4]. A Unity utiliza a classe “Collider” [9] , enquanto a Unreal 4 utiliza  a classe “Collision” [7], e ambas podem suportar uma função de personalização do corpo em colisão, o que ajuda os atores a colidir com mais precisão. Para a detecção de colisão, foi desenvolvida uma simulação de uma bengala em movimento, que possui três colisores, na ponta e nos cantos inferiores direito e esquerdo. Essa demonstração pode ser observada na Demo Acessível (Redirecionar).
 
@@ -20,19 +21,19 @@ Com essa colisão espera-se retornar sons de diferentes materiais, por exemplo, 
 
 A imagem representa o código em Blueprints feito na Unreal 4.
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/md1.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md1.png)
 
 A imagem mostra o cálculo específico para tocar sons mais altos conforme a distância diminui.
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/md2.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md2.png)
 
 A imagem representa o código em Blueprints feito na Unreal 4, onde são detectadas as colisões.
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/md3.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md3.png)
 
 A imagem mostra o exemplo da bengala em funcionamento.
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/md4.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md4.png)
 
 
 ### Casos de Uso
