@@ -16,11 +16,11 @@ A intenção é trazer um sistema de leitor de menus para que o jogo possa ser a
 
 A imagem mostra o editor de HUDs da Unreal 4.
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md1.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/MenuReader/md1.png)
 
 ### Casos de Uso
 
-![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/Whitecane/md2.png)
+![plot](https://github.com/LeoGarcez/accessible-features/blob/main/Content/MenuReader/md2.png)
 (Minecraft – Mojang Studios)
 
 ### Referências
